@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./images/SandtoBlue.jpg');
+}
+/*-------Navbar-------------------------------------*/
+.navbar-principal{
+    background-color: #152f49;
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-logo{
+    padding: 5%;
+}
+
+#logo{
+    width: 100%;
+}
+
+.contenedor-menu{
+    width: 80%;
+    padding: 10%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+}
+
+a{
+  font-size: 130%;
+  text-decoration: none;
+  color: linen;
+  letter-spacing: 1pt;
+}
+
+li :hover{
+   font-weight: 800;
+   color: lightskyblue ;
+   padding-bottom: 10px;
+   border-bottom: 1px solid lightsteelblue;
+}
+/*---sección Acerca de---------------------------------------*/
+.section-about{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 45px 60px;
+    padding: 5%;
+    border:1px none mediumspringgreen;
+    border-radius: 25pt;
+    background-color: moccasin;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+}
+
+.text-about{
+    background-color: hotpink;
+    color:#152f49;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.about-title{
+    font-weight: 700;
+}
+
+.about-description{
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+
+.about-photo-container{
+    width: 50%;
+    padding: 20px;
+}
