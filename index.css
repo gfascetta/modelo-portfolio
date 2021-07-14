@@ -1,35 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url('./images/SandtoBlue.jpg');
+body {
+    background-color: rgb(252, 238, 221);
 }
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
 /*-------Navbar-------------------------------------*/
-.navbar-principal{
+
+header {
+    width: 100%;
+}
+
+.navbar-principal {
     background-color: #152f49;
-    height: 15vh;
-    display:flex;
+    height: 12vh;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.contenedor-logo{
+.contenedor-logo {
     padding: 5%;
 }
 
-#logo{
+#logo {
     width: 100%;
 }
 
-.contenedor-menu{
+.contenedor-menu {
     width: 80%;
     padding: 10%;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -38,96 +53,108 @@ ul{
     font-weight: 600;
 }
 
-a{
-  font-size: 130%;
-  text-decoration: none;
-  color: linen;
-  letter-spacing: 1pt;
+a {
+    font-size: 130%;
+    text-decoration: none;
+    color: linen;
+    letter-spacing: 1pt;
 }
 
-li :hover{
-   font-weight: 800;
-   color: lightskyblue ;
-   padding-bottom: 10px;
-   border-bottom: 1px solid lightsteelblue;
+li :hover {
+    font-weight: 800;
+    color: lightskyblue;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightsteelblue;
 }
+
+
 /*---sección Acerca de---------------------------------------*/
-.section-about{
-    height:80%;
+
+.section-about {
+    height: 60vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 5%;
 }
 
-.about{
+.about {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: space-between;
+    justify-content: center;
     flex-direction: column;
     background-color: rgb(236, 220, 191);
-    border-radius: 9%;
-    height:fit-content;
+    border-radius: 5%;
     width: 50%;
 }
 
-.text-about{
-    color:#152f49;
+.text-about {
+    color: #152f49;
     text-align: center;
     font-family: 'Lucida Sans';
     width: 100%;
     padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.about-title{
+.about-title {
     font-weight: 700;
+    font-size: 1.7em;
 }
 
-.about-description{
-    font-size: 100%;
+.about-description {
+    font-size: 1em;
     font-weight: 400;
     padding: 10px;
     width: 100%;
     text-align: center;
 }
 
-.button-container{
+.button-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:15px;
+    padding: 15px;
 }
 
-.botonOscuro, .botonClaro{
+.botonOscuro,
+.botonClaro {
     border: none;
     border-radius: 9%;
     width: 30%;
     height: 35px;
-    font-family:'Lucida Sans Regular';
+    font-family: 'Lucida Sans Regular';
     font-weight: 500;
 }
 
-.botonClaro{
-    background-color:rgb(248, 155, 155);
-    color:black;
+.botonClaro {
+    background-color: rgb(248, 155, 155);
+    color: black;
 }
 
-.botonOscuro{
+.botonOscuro {
     background-color: rgb(109, 184, 219);
-    color:black;
+    color: black;
 }
 
-.about-photo-container{
-    width: 30%;
-    padding: 0 20px;
+.about-photo-container {
+    width: 40%;
+    height: 90%;
+    padding: 20px;
 }
+
 
 /*---------más info-------------------------*/
 
-.more{
-    border:1px none mediumspringgreen;
+.more {
+    border: 1px none mediumspringgreen;
     background-color: moccasin;
-    color:#152f49;
+    color: #152f49;
     text-align: center;
     font-family: 'Lucida Sans';
     height: 120px;
