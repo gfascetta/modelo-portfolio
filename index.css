@@ -1,3 +1,10 @@
+:root {
+    --azul-oscuro: #152f49;
+    --blanco: rgb(252, 238, 221);
+    --font-fina: 'Yanone Kaffeesatz', sans-serif;
+    --font-redonda: 'Lucida Sans', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(252, 238, 221);
+    background-color: var(--blanco);
 }
 
 .body {
@@ -24,7 +31,7 @@ header {
 }
 
 .navbar-principal {
-    background-color: #152f49;
+    background-color: var(--azul-oscuro);
     height: 12vh;
     display: flex;
     align-items: center;
@@ -49,7 +56,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: var(--font-fina);
     font-weight: 600;
 }
 
@@ -71,65 +78,67 @@ li :hover {
 /*---sección Acerca de---------------------------------------*/
 
 .section-about {
-    height: 60vh;
+    background-color: var(--blanco);
+    height: 55vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 5%;
+    flex-wrap: wrap;
+    padding: 0 2%;
 }
 
 .about {
     display: flex;
-    align-items: space-between;
-    justify-content: center;
     flex-direction: column;
-    background-color: rgb(236, 220, 191);
-    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5%; */
     width: 50%;
 }
 
 .text-about {
-    color: #152f49;
+    color: var(--azul-oscuro);
     text-align: center;
-    font-family: 'Lucida Sans';
+    font-family: var(--font-redonda);
     width: 100%;
-    padding: 30px 20px;
+    padding: 30px 2% 0px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .about-title {
     font-weight: 700;
-    font-size: 1.7em;
+    font-size: 1.7rem;
+    width: 100%;
 }
 
 .about-description {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
-    padding: 10px;
-    width: 100%;
     text-align: center;
+    padding: 3%;
+    width: 100%;
 }
 
 .button-container {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 2%;
 }
 
 .botonOscuro,
 .botonClaro {
-    border: none;
-    border-radius: 9%;
-    width: 30%;
-    height: 35px;
+    border: 1px solid white;
+    border-radius: 10%;
+    width: 40%;
+    height: 2rem;
     font-family: 'Lucida Sans Regular';
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .botonClaro {
@@ -143,23 +152,142 @@ li :hover {
 }
 
 .about-photo-container {
-    width: 40%;
-    height: 90%;
-    padding: 20px;
+    display: inline-block;
+    padding: 2%;
 }
 
 
-/*---------más info-------------------------*/
+/*---------historia-------------------------*/
 
-.more {
-    border: 1px none mediumspringgreen;
+.my-story {
     background-color: moccasin;
-    color: #152f49;
+    color: var(--azul-oscuro);
     text-align: center;
-    font-family: 'Lucida Sans';
-    height: 120px;
+    font-family: var(--font-redonda);
+    /*  */
+    height: 35vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.my-story h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.my-story p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 3%;
+    width: 100%;
+}
+
+
+/* ---contacto----- */
+
+.contact {
+    color: var(--azul-oscuro);
+    text-align: center;
+    font-family: var(--font-redonda);
+    /*  */
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-img {
+    width: 30%;
+}
+
+.contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--azul-oscuro);
+    border: 1 solid transparent;
+    border-radius: 20px;
+    background-color: rgb(248, 231, 252);
+    box-shadow: -1px 4px 56px -17px rgba(49, 50, 4, 0.86);
+    -webkit-box-shadow: -1px 4px 56px -17px rgba(49, 50, 4, 0.86);
+    -moz-box-shadow: -1px 4px 56px -17px rgba(49, 50, 4, 0.86);
+}
+
+.contact-form:hover {
+    background-color: rgb(165, 225, 253);
+}
+
+.contact-form ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0;
+}
+
+.contact-form li input,
+textarea {
+    background-color: transparent;
+    size: 2em;
+    width: 100%;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 10%;
+    padding: 6px;
+    transition: all 3s ease;
+    color: blueviolet;
+}
+
+.submit-button {
+    background-color: rgb(124, 212, 190);
+    border: none;
+    font-family: var(--font-fina);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    height: 1.7rem;
+    width: 30%;
+    margin-bottom: 1%;
+}
+
+
+/* -----footer---------- */
+
+footer {
+    height: 10vh;
+    background-image: url(./images/SandtoBlue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--blanco);
+    letter-spacing: 0.1em;
+}
+
+.redes li {
+    display: block;
 }

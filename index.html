@@ -21,9 +21,9 @@
                 <div class="contenedor-menu">
                     <ul>
                         <li><a href="">Inicio</a> </li>
-                        <li><a href="">Sobre mí</a> </li>
-                        <li><a href="">Trabajos</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li><a href="#about">Sobre mí</a> </li>
+                        <li><a href="#recorrido">Recorrido</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,9 +31,9 @@
 
         <section class="section-about">
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="text-about">
-                    <h1 class="about-title">Acerca de</h1>
+                    <h1 class="about-title">Acerca de mi</h1>
                     <p class="about-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tenetur voluptatibus, totam velit aut neque voluptatem minima ipsam dicta consequuntur provident ad eum voluptatum quisquam magni asperiores eos necessitatibus iure!
                     </p>
@@ -47,19 +47,54 @@
 
 
             <div class="about-photo-container">
-                <img src="./images/avatar-mujer.png" alt="" height="270">
+                <img src="./images/avatar-mujer.png" alt="" width="250">
             </div>
 
         </section>
 
-        <section class="more">
-            <h2>Más información</h2>
+        <section class="my-story" id="recorrido">
+            <h2>Recorrido</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatem commodi, velit enim, mollitia neque modi accusantium quia ducimus iusto voluptatibus similique dolores eaque soluta illum nihil cupiditate necessitatibus nulla? Lorem ipsum dolor
                 sit amet, consectetur adipisicing elit. Aliquid, natus, tempore exercitationem, molestiae nemo sint porro ut perferendis molestias illum sequi aut eius labore quis nam voluptatum nobis! Facere, incidunt.
             </p>
         </section>
     </div>
+
+    <section class="contact" id="contacto">
+
+        <div class="contact-img">
+            <img src="./images/send-email.png" alt="" width="150">
+        </div>
+
+        <form class="contact-form">
+            <h2>Escribime</h2>
+            <ul>
+                <li>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                </li>
+
+                <li>
+                    <label for="email">e-mail</label>
+                    <input type="email" name="email" id="email">
+                </li>
+
+                <li>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
+                </li>
+            </ul>
+            <button class="submit-button" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <ul class="redes">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
