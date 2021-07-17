@@ -168,16 +168,22 @@ li :hover {
     background-image: url("./images/flor-de-loto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     /* z-index: -1; */
 }
 
-
-/* 
 .my-story::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
     background-color: var(--azul-oscuro);
-    mix-blend-mode: overlay;
-    z-index: 0;
-} */
+    opacity: 0.60;
+    mix-blend-mode: multiply;
+}
 
 .story-text {
     /* propiedades del font */
@@ -218,7 +224,7 @@ li :hover {
     text-align: center;
     font-family: var(--font-redonda);
     /*  */
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -233,11 +239,13 @@ li :hover {
 .contact-form {
     /* emplazamiento */
     width: 40%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2%;
+    margin: 2% 0;
+    padding: 2% 0;
     /* estilos */
     color: var(--azul-oscuro);
     border: 1 solid transparent;
