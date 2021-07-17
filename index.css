@@ -81,7 +81,7 @@ li :hover {
 
 .section-about {
     background-color: var(--blanco);
-    height: 55vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -192,7 +192,7 @@ li :hover {
     font-family: var(--font-redonda);
     text-shadow: -1px 1px 8px rgba(0, 0, 0, 0.6);
     /*  */
-    height: 35vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -224,7 +224,7 @@ li :hover {
     text-align: center;
     font-family: var(--font-redonda);
     /*  */
-    height: 45vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -239,13 +239,13 @@ li :hover {
 .contact-form {
     /* emplazamiento */
     width: 40%;
-    height: 35vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 2% 0;
-    padding: 2% 0;
+    padding: 2% 0 0;
     /* estilos */
     color: var(--azul-oscuro);
     border: 1 solid transparent;
@@ -278,12 +278,19 @@ li :hover {
 .contact-form li input,
 textarea {
     background-color: transparent;
-    size: 2em;
-    width: 100%;
+    outline: none;
     border: 1px solid var(--azul-oscuro);
     border-radius: 10px;
+    /* emplazamiento */
+    size: 2em;
+    width: 100%;
     padding: 6px;
     transition: all 3s ease;
+    /* propiedades del font */
+    font-family: inherit;
+    font-weight: inherit;
+    color: var(--azul-oscuro);
+    letter-spacing: 0.07rem;
 }
 
 .submit-button {
@@ -304,8 +311,8 @@ textarea {
 footer {
     height: 10vh;
     background: #373B44;
-    background: -webkit-linear-gradient(to right, #4286f4, #373B44);
-    background: linear-gradient(to right, #4286f4, #373B44);
+    background: -webkit-linear-gradient(to right, #2473f1, #373B44);
+    background: linear-gradient(to right, #2473f1, #373B44);
     width: 100%;
     display: flex;
     align-items: center;
@@ -318,11 +325,15 @@ footer {
     align-items: center;
     justify-content: space-around;
     color: var(--blanco);
-    letter-spacing: 0.1em;
+    font-size: 1.3rem;
 }
 
 .redes li {
     display: block;
+}
+
+.redes li.a {
+    text-decoration: none;
 }
 
 
