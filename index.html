@@ -14,51 +14,50 @@
 <body>
     <div class="body">
         <header>
-            <nav class="navbar-principal">
-                <div class="contenedor-logo">
-                    <img src="./images/logo.png" id="logo" alt="logo">
+            <nav class="navbar">
+                <div class="navbar__contenedor-logo">
+                    <img src="./images/logo.png" class="navbar__logo--img" alt="logo">
                 </div>
 
-                <!-- <div>
+                <!-- <div> icono del menu hamburguesa a implementar
                     <i class="fas fa-bars"></i>
                 </div> -->
 
-                <div class="contenedor-menu">
-                    <ul class="menu">
-                        <li><a href="">Inicio</a> </li>
-                        <li><a href="#about">Sobre mí</a> </li>
-                        <li><a href="#recorrido">Recorrido</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                <div class="navbar__contenedor-menu">
+                    <ul class="navbar__menu--ul">
+                        <li class="nav__menu--li"><a href="">Inicio</a> </li>
+                        <li class="nav__menu--li"><a href="#about">Sobre mí</a> </li>
+                        <li class="nav__menu--li"><a href="#recorrido">Recorrido</a></li>
+                        <li class="nav__menu--li"><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <section class="section-about">
-
-            <div class="about" id="about">
-                <div class="text-about">
-                    <h1 class="about-title">Acerca de mi</h1>
-                    <p class="about-description">
+            <div class="about__container-text" id="about">
+                <div class="about__text">
+                    <h1 class="about__text--title">Acerca de mi</h1>
+                    <p class="about__text--description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tenetur voluptatibus, totam velit aut neque voluptatem minima ipsam dicta consequuntur provident ad eum voluptatum quisquam magni asperiores eos necessitatibus iure!
                     </p>
                 </div>
 
-                <div class="button-container">
+                <div class="about__button-container">
                     <button class="botonClaro">Botón 1</button>
                     <button class="botonOscuro">Botón 2</button>
                 </div>
             </div>
 
 
-            <div class="about-photo-container">
+            <div class="about__photo-container">
                 <img src="./images/avatar-mujer.png" alt="" width="250">
             </div>
 
         </section>
 
-        <section class="my-story" id="recorrido">
-            <div class="story-text">
+        <section class="section-recorrido" id="recorrido">
+            <div class="recorrido__text">
                 <h2>Recorrido</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatem commodi, velit enim, mollitia neque modi accusantium quia ducimus iusto voluptatibus similique dolores eaque soluta illum nihil cupiditate necessitatibus nulla? Lorem ipsum dolor
@@ -69,13 +68,13 @@
         </section>
     </div>
 
-    <section class="contact" id="contacto">
+    <section class="section-contact" id="contacto">
 
-        <div class="contact-img">
+        <div class="contact__img-container">
             <img src="./images/send-email.png" alt="" width="150">
         </div>
 
-        <form class="contact-form">
+        <form class="contact__form">
             <h2>Escribime</h2>
             <ul>
                 <li>
@@ -92,12 +91,12 @@
                     <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
                 </li>
             </ul>
-            <button class="submit-button" type="submit">Enviar</button>
+            <button class="contact__submit-button" type="submit">Enviar</button>
         </form>
     </section>
 
     <footer class="footer">
-        <ul class="redes">
+        <ul class="footer__redes">
             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
             <li><a href=""><i class="fab fa-instagram"></i></a></li>
             <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>

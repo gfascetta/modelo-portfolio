@@ -30,7 +30,7 @@ header {
     width: 100%;
 }
 
-.navbar-principal {
+.navbar {
     background-color: var(--azul-oscuro);
     height: 12vh;
     width: 100%;
@@ -40,20 +40,31 @@ header {
     justify-content: space-between;
 }
 
-.contenedor-logo {
+.navbar__contenedor-logo {
     padding: 5%;
 }
 
-#logo {
+.navbar__logo {
     width: 100%;
 }
 
-.contenedor-menu {
+.navbar__logo--img {
+    width: 100%;
+    transition-duration: 1s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+}
+
+.navbar__logo--img:hover {
+    transform: scale(1.2);
+}
+
+.navbar__contenedor-menu {
     width: 80%;
     padding: 10%;
 }
 
-ul {
+.navbar__menu--ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -62,14 +73,14 @@ ul {
     font-weight: 600;
 }
 
-a {
+.nav__menu--li a {
     font-size: 130%;
     text-decoration: none;
     color: linen;
     letter-spacing: 1pt;
 }
 
-li :hover {
+.nav__menu--li :hover {
     font-weight: 800;
     color: lightskyblue;
     padding-bottom: 10px;
@@ -91,7 +102,7 @@ li :hover {
     margin-top: 12vh;
 }
 
-.about {
+.about__container-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +111,7 @@ li :hover {
     width: 50%;
 }
 
-.text-about {
+.about__text {
     color: var(--azul-oscuro);
     text-align: center;
     font-family: var(--font-redonda);
@@ -112,13 +123,13 @@ li :hover {
     justify-content: center;
 }
 
-.about-title {
+.about__text--title {
     font-weight: 700;
     font-size: 1.7rem;
     width: 100%;
 }
 
-.about-description {
+.about__text--description {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
@@ -126,12 +137,12 @@ li :hover {
     width: 100%;
 }
 
-.button-container {
+.about__button-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 80%;
-    margin-bottom: 2%;
+    margin: 2% 0;
 }
 
 .botonOscuro,
@@ -142,6 +153,9 @@ li :hover {
     height: 2rem;
     font-family: 'Lucida Sans Regular';
     font-weight: 600;
+    transition-duration: 1.2s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
 }
 
 .botonClaro {
@@ -154,15 +168,21 @@ li :hover {
     color: black;
 }
 
-.about-photo-container {
+.botonClaro:hover,
+.botonOscuro:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.about__photo-container {
     display: inline-block;
     padding: 2%;
 }
 
 
-/*---------historia-------------------------*/
+/*---------Recorrido-------------------------*/
 
-.my-story {
+.section-recorrido {
     /* background-color: #A7BFE8; */
     width: 100%;
     background-image: url("./images/flor-de-loto.jpg");
@@ -173,7 +193,7 @@ li :hover {
     /* z-index: -1; */
 }
 
-.my-story::before {
+.section-recorrido::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -185,7 +205,7 @@ li :hover {
     mix-blend-mode: multiply;
 }
 
-.story-text {
+.recorrido__text {
     /* propiedades del font */
     color: var(--blanco);
     text-align: center;
@@ -201,14 +221,14 @@ li :hover {
     position: relative;
 }
 
-.my-story h2 {
+.recorrido__text h2 {
     font-weight: 700;
     font-size: 1.7rem;
     width: 100%;
     text-align: center;
 }
 
-.my-story p {
+.recorrido__text p {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
@@ -217,9 +237,9 @@ li :hover {
 }
 
 
-/* ---contacto----- */
+/* ---------------contacto-------------- */
 
-.contact {
+.section-contact {
     color: var(--azul-oscuro);
     text-align: center;
     font-family: var(--font-redonda);
@@ -232,11 +252,11 @@ li :hover {
     flex-wrap: wrap;
 }
 
-.contact-img {
+.contact__img-container {
     width: 30%;
 }
 
-.contact-form {
+.contact__form {
     /* emplazamiento */
     width: 40%;
     height: 40vh;
@@ -256,18 +276,18 @@ li :hover {
     -moz-box-shadow: -1px 4px 56px -17px rgba(49, 50, 4, 0.86);
 }
 
-.contact-form:hover {
+.contact__form:hover {
     background-color: #fafafa;
 }
 
-.contact-form ul {
+.contact__form ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contact-form li {
+.contact__form li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +295,7 @@ li :hover {
     padding: 4% 0;
 }
 
-.contact-form li input,
+.contact__form li input,
 textarea {
     background-color: transparent;
     outline: none;
@@ -293,7 +313,7 @@ textarea {
     letter-spacing: 0.07rem;
 }
 
-.submit-button {
+.contact__submit-button {
     background-color: rgb(124, 212, 190);
     border: none;
     font-family: var(--font-fina);
@@ -303,6 +323,13 @@ textarea {
     width: 30%;
     margin-bottom: 1%;
     border-radius: 10px;
+    transition-duration: 1s;
+    transition-property: color, background-color;
+}
+
+.contact__submit-button:hover {
+    background-color: rgb(218, 13, 200);
+    color: white;
 }
 
 
@@ -319,21 +346,32 @@ footer {
     flex-wrap: wrap;
 }
 
-.redes {
+.footer__redes {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: var(--blanco);
-    font-size: 1.3rem;
 }
 
-.redes li {
+.footer__redes li {
     display: block;
 }
 
-.redes li.a {
+.footer__redes li.a {
     text-decoration: none;
+}
+
+.fab {
+    color: var(--blanco);
+    font-size: 1.3rem;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.fab:hover {
+    color: rgb(255, 179, 149);
+    font-size: 2rem;
 }
 
 
