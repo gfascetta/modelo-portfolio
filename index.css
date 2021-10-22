@@ -169,6 +169,11 @@ header {
     color: black;
 }
 
+.botonOscuro a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .botonClaro:hover,
 .botonOscuro:hover {
     transform: scale(1.1);
