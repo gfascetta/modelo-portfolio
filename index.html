@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-    <title>Mi primer navbar</title>
+    <title>Modelo Portfolio</title>
     <link rel="shortcut icon" href="./images/icon.ico">
     <script src="https://kit.fontawesome.com/01fb7d9b0d.js" crossorigin="anonymous"></script>
 </head>
@@ -25,12 +25,11 @@
 
                 <div class="navbar__contenedor-menu">
                     <ul class="navbar__menu--ul">
-                        <li class="nav__menu--li"><a href="">Inicio</a> </li>
-                        <li class="nav__menu--li"><a href="#about">Sobre mí</a> </li>
-                        <li class="nav__menu--li"><a href="#recorrido">Recorrido</a></li>
+                        <li class="nav__menu--li"><a href="#about">Inicio</a> </li>
+                        <!-- <li class="nav__menu--li"><a href="#recorrido">Historia</a></li> -->
                         <li class="nav__menu--li"><a href="#work">Trabajos</a></li>
                         <li class="nav__menu--li"><a href="#tecnologias">Tecnologías</a></li>
-                        <li class="nav__menu--li"><a href="#contacto">Contacto</a></li>
+                        <li class="nav__menu--li"><a href="#redes">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,34 +38,40 @@
         <section class="section-about">
             <div class="about__container-text" id="about">
                 <div class="about__text">
-                    <h1 class="about__text--title">Acerca de mi</h1>
+                    <h1 class="about__text--title">Gabriela Fascetta</h1>
+                    <h2>trainee/jr developer</h2>
                     <p class="about__text--description">
-                        Mi nombre es Gabriela Fascetta. Soy estudiante de la tecnicatura en Programación Informática en la Universidad Nacional de Quilmes. Al mismo tiempo, me estoy formando como Full Stack developer en NUCBA. Me considero una persona curiosa, creativa, con
+                        Estudiante de la tecnicatura en Programación Informática en la Universidad Nacional de Quilmes, formándome como Full Stack developer. Me considero una persona curiosa, creativa, con
                         inclinación al parendizaje constante.
                     </p>
                 </div>
 
                 <div class="about__button-container">
                     <!-- <button class="botonClaro">Contacto</button> -->
-                    <button class="botonOscuro"> <a href="https://www.linkedin.com/in/gabriela-fascetta-2149b8138/" target="_blank">Ver CV</a> </button>
+                    <button class="botonOscuro"> <a href="https://drive.google.com/file/d/1q6h8WE5eA9_N0uE1xx7u_oc26JA1mwmj/view?usp=sharing" target="_blank">Ver CV</a> </button>
                 </div>
             </div>
 
 
             <div class="about__photo-container">
-                <img src="./images/IMG_20190610_200932.jpg" alt="" width="250">
+                <img src="./images/azul.png" alt="" width="250">
             </div>
 
         </section>
 
         <section class="section-recorrido" id="recorrido">
             <div class="recorrido__text">
-                <h2>Recorrido</h2>
+                <h2>Historia</h2>
                 <p>
-                    Previamente hice la Licenciatura en Psicología en la Universidad de Buenos Aires. Fui buscando mi camino, me interesé en las neurociencias y en como los seres humanos procesamos la información, cómo aprendemos y nos comunicamos. La vocación de servicio
-                    me lleva constantemente a preguntarme cómo se puede contribuir a que las personas puedan mejorar su calidad de vida en todos sus ámbitos. Reconociendo el rol primordial que tiene la tecnología en nuestra vida cotidianda, Hacia el final
-                    de la carrera me fui interesando en el estudio de la experiencia de usuario, temática que luego daría origen a mi tesis de grado. Llegué al área de IT aspirando a continuar formándome tanto en UX como en el área de desarrollo. Mi objetivo
-                    actual es insertarme laboralmente en el mundo IT y seguir desarrollándome.
+                    Soy Licenciada en Psicología, apasionada por la mente humana y la tecnología. Descubrí la intersección entre Psicología y TICS, adentrándome en la investigación de experiencia de usuario. Exploré la programación autodidactamente y luego en la tecnicatura de programación informática en la UNQ. Continué mi formación con cursos en Udemy y NUCBA, incluyendo el bootcamp de programación full stack, que actualmente me encuentro realizando.
+                </p>
+                <br>
+                <p>
+                    La transición de lo social al campo IT fue casi tan desafiante como gratificante. Hallé satisfacción en resolver problemas y crear soluciones tecnológicas innovadoras. Ahora, mi enfoque está en ingresar al mundo IT, aplicando mi conocimiento psicológico y habilidades de programación para impactar positivamente en productos y servicios.
+                </p>
+                <br>
+                <p>   
+                    Busco oportunidades en el campo tecnológico, siendo una apasionada y comprometida profesional dispuesta a enfrentar nuevos retos. Deseo contribuir con una visión única y continuar creciendo en el área. Agradezco el tiempo para leer mi presentación y anhelo conectar con personas que compartan mi entusiasmo por la tecnología y la innovación. ¡El futuro promete emocionantes posibilidades!
                 </p>
 
             </div>
@@ -76,36 +81,48 @@
         <h2>Mis trabajos</h2>
         <div class="work-container">
             <div class="work-ejemplar">
-                <a href="https://green-leaf.vercel.app/" target="_blank"><img src="images/400x400.png" alt="" width="300"></a>
-                <p></p>
+                <a href="https://green-leaf.vercel.app/" target="_blank">
+                    <img src="images/green-leaf.jpg" alt="" class="work-img">
+                </a>
+                <p class="work-p">html + css</p>
             </div>
             <div class="work-ejemplar">
-                <a href="https://pimer-proyecto-bootstrap.vercel.app/" target="_blank"><img src="images/400x400.png" alt="" width="300"></a>
-                <p></p>
+                <a href="https://vegalu-bakery.vercel.app/ target="_blank">
+                    <img src="images/vegalu.jpg" alt="" class="work-img">
+                </a>
+                <p class="work-p">html + css + js</p>
             </div>
             <div class="work-ejemplar">
-                <a href="" target="_blank"><img src="images/400x400.png" alt="" width="300"></a>
-                <p></p>
+                <a href="https://calculadora-de-ahorro.vercel.app/" target="_blank">
+                    <img src="images/calculadora.jpg" alt="" class="work-img">
+                </a>
+                <p class="work-p">js</p>
             </div>
-            <div class="work-ejemplar">
-                <a href="" target="_blank"><img src="images/400x400.png" alt="" width="300"></a>
-                <p></p>
-            </div>
+            <!-- <div class="work-ejemplar">
+                <a href="" target="_blank">
+                    <img src="images/400x400.png" alt="" class="work-img">
+                </a>
+                <p class="work-p"></p>
+            </div> -->
         </div>
     </section>
 
     <section class="tecnologias-section" id="tecnologias">
         <h2>Tecnologias</h2>
         <div class="tecnologias-container">
+            <i class="fab fa-brands fa-github"></i>
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-js-square"></i>
             <i class="fab fa-bootstrap"></i>
             <i class="fab fa-sass"></i>
             <i class="fab fa-react"></i>
+            <i class="fab fa-brands fa-java"></i>
+            <i class="fab fa-brands fa-docker"></i>
+            <i class="fab fa-solid fa-database"></i>
         </div>
     </section>
-    <section class="section-contact" id="contacto">
+    <!-- <section class="section-contact" id="contacto">
 
         <div class="contact__img-container">
             <img src="./images/send-email.png" alt="" width="150">
@@ -130,14 +147,14 @@
             </ul>
             <button class="contact__submit-button" type="submit">Enviar</button>
         </form>
-    </section>
+    </section> -->
 
-    <footer class="footer">
+    <footer class="footer" id="redes">
         <ul class="footer__redes">
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <!-- <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li> -->
             <li><a href="https://github.com/gfascetta" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/gabriela-fascetta-2149b8138/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/gabrielafascetta/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
     </footer>
 </body>

@@ -84,15 +84,15 @@ header {
     font-weight: 800;
     color: lightskyblue;
     padding-bottom: 10px;
-    border-bottom: 1px solid lightsteelblue;
+    border-bottom: 1px solid transparent;
 }
 
 
 /*---sección Acerca de---------------------------------------*/
 
 .section-about {
-    background-color: var(--blanco);
-    height: 50vh;
+    background-color: rgb(0, 0, 51);
+    height: fit-content;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -100,6 +100,13 @@ header {
     flex-wrap: wrap;
     padding: 0 2%;
     margin-top: 12vh;
+    padding-bottom: 20px;
+}
+
+.section-about h2{
+    font-size: 1.2rem;
+    color: lightseagreen;
+    padding: 5px 0;
 }
 
 .about__container-text {
@@ -112,7 +119,7 @@ header {
 }
 
 .about__text {
-    color: var(--azul-oscuro);
+    color: var(--blanco);
     text-align: center;
     font-family: var(--font-redonda);
     width: 100%;
@@ -167,6 +174,7 @@ header {
 .botonOscuro {
     background-color: rgb(109, 184, 219);
     color: black;
+    border-color: transparent;
 }
 
 .botonOscuro a {
@@ -195,11 +203,13 @@ header {
 .section-recorrido {
     /* background-color: #A7BFE8; */
     width: 100%;
+    height: fit-content;
     background-image: url("./images/flor-de-loto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    padding-top: 20px;
     /* z-index: -1; */
 }
 
@@ -222,7 +232,7 @@ header {
     font-family: var(--font-redonda);
     text-shadow: -1px 1px 8px rgba(0, 0, 0, 0.6);
     /*  */
-    height: 50vh;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -271,22 +281,35 @@ header {
 }
 
 .work-container {
-    width: 100%;
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
 .work-ejemplar {
     width: 20%;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 15px;
 }
 
+.work-img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.work-p {
+    font-size: 0.3rem;
+    color: darkgoldenrod;
+}
 
 /* ---------tecnologias---------------------------------- */
 
 .tecnologias-section {
     width: 100%;
-    height: 30vh;
+    height: fit-content;
     padding: 2rem 0;
     background: #355C7D;
     /* fallback for old browsers */
@@ -297,6 +320,7 @@ header {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -315,10 +339,15 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tecnologias-container>.fab {
     font-size: 3rem;
+}
+
+.fab{
+    padding: 0.5rem;
 }
 
 
